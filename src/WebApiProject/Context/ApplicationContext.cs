@@ -1,4 +1,5 @@
 ﻿using ConsoleProject.Models;
+using ConsoleProject.Models.Profile;
 using ConsoleProject.Models.Questions;
 using ConsoleProject.Models.Stages;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +18,7 @@ namespace WebApiProject.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // ef configurations
             modelBuilder.Entity<ApplicationProgram>()
                 .ToContainer("Programs");
 

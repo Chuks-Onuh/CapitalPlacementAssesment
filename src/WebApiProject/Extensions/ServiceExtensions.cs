@@ -13,6 +13,7 @@ namespace CapitalPlacementAssesementTaskApi.Extensions
             services.AddScoped<IApplicationRepository, ApplicationRepository>();
             services.AddScoped<IWorkFlowRepository, WorkFlowRepository>();
             services.AddScoped<IQuestionRepository, QuestionRepository>();
+            services.AddScoped<IPreviewRepository, PreviewRepository>();
         }
     }
 }

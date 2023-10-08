@@ -9,7 +9,7 @@ namespace ConsoleProject.Dtos.RetrievalModels
         public YesOrNoQuestion YesOrNoQuestion { get; set; }
         public string QuestionContent { get; set; }
         public FileUploadQuestion FileUploadQuestion { get; set; }
-        //public NumberQuestion NumberQuestion { get; set; }
+        public NumberQuestion NumberQuestion { get; set; }
         public MultipleChoiceQuestion MultipleChoiceQuestion { get; set; }
         public ShortAnswerQuestion ShortAnswerQuestion { get; set; }
         public ParagraphQuestion ParagraphQuestion { get; set; }

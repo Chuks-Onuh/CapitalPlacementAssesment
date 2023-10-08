@@ -19,6 +19,15 @@ namespace CapitalPlacementAssesementTaskApi.Contracts.Repositories
 
         public async Task<BaseResponse<bool>> AddProgramAsync(CreateProgram programModel)
         {
+            var existingProgram = await _context.Programs.FirstOrDefaultAsync(p => p.ProgramTitle.ToLower() == programModel.ProgramTitle.ToLower());
+
+            // If program exists, return an error response
+            if (existingProgram != null) return new BaseResponse<bool>
+            {
+                Status = false,
+                Message = $"Program With Program Title: {programModel.ProgramTitle} already exists",
+            };
+
             var program = new ApplicationProgram
             {
                 Description = programModel.Description,
