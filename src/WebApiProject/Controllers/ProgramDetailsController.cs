@@ -8,9 +8,9 @@ namespace CapitalPlacementAssesementTaskApi.Controllers
     [Route("api/[controller]")]
     public class ProgramDetailsController : ControllerBase
     {
-        private readonly IProgramDetailsService _programDetailsService;
+        private readonly IProgramDetailsRepository _programDetailsService;
 
-        public ProgramDetailsController(IProgramDetailsService programDetailsService)
+        public ProgramDetailsController(IProgramDetailsRepository programDetailsService)
         {
             _programDetailsService = programDetailsService;
         }

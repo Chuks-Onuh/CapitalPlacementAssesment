@@ -4,7 +4,7 @@ using ConsoleProject.Dtos.ServiceRequestModels.Program;
 
 namespace CapitalPlacementAssesementTaskApi.Contracts.Interfaces
 {
-    public interface IProgramDetailsService
+    public interface IProgramDetailsRepository
     {
         Task<BaseResponse<bool>> AddProgramAsync(CreateProgram programModel);
         Task<BaseResponse<bool>> EditProgramAsync(UpdateProgram programModel, string programTitle);

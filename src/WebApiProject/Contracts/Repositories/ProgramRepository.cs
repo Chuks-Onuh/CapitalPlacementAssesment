@@ -9,7 +9,7 @@ using WebApiProject.Context;
 
 namespace CapitalPlacementAssesementTaskApi.Contracts.Repositories
 {
-    public class ProgramRepository : IProgramDetailsService
+    public class ProgramRepository : IProgramDetailsRepository
     {
         private readonly ApplicationContext _context;
         public ProgramRepository(ApplicationContext context)
